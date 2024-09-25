@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <h1>Meal Plan for Today</h1>
+    <nav>
+        <a href="index.html" class="button">Home</a>
+    </nav>
+</header>
+<main style="display: flex; justify-content: space-between;">
+    <section id="meal-options">
+        <h2>Recommended Dishes</h2>
+        <ul>
+            <!-- Yum Yum Better Ice Cream -->
+            <li>Yum Yum Chocolate Ice Cream - $4 <button onclick="addToMeal('Yum Yum Chocolate Ice Cream', 4)">Add to Meal</button></li>
+            <li>Yum Yum Signature Hot Dog - $6 <button onclick="addToMeal('Yum Yum Signature Hot Dog', 6)">Add to Meal</button></li>
+            <li>Yum Yum Cheerwine Float - $5 <button onclick="addToMeal('Yum Yum Cheerwine Float', 5)">Add to Meal</button></li>
+
+            <!-- Slices Pizza by Tony -->
+            <li>Slices Cheese Pizza - $12 <button onclick="addToMeal('Slices Cheese Pizza', 12)">Add to Meal</button></li>
+            <li>Pepperoni Slice - $10 <button onclick="addToMeal('Pepperoni Slice', 10)">Add to Meal</button></li>
+            <li>Stromboli - $15 <button onclick="addToMeal('Stromboli', 15)">Add to Meal</button></li>
+
+            <!-- Sticks and Stones -->
+            <li>Sweet Carolina Pizza - $18 <button onclick="addToMeal('Sweet Carolina Pizza', 18)">Add to Meal</button></li>
+            <li>Manhattan Blue Sandwich - $14 <button onclick="addToMeal('Manhattan Blue Sandwich', 14)">Add to Meal</button></li>
+            <li>Wings - $9 <button onclick="addToMeal('Wings', 9)">Add to Meal</button></li>
+        </ul>
+    </section>
+
+    <section id="meal-plan">
+        <h2>Your Meal Plan</h2>
+        <ul id="selected-meals"></ul>
+        <p>Total Cost: $<span id="total-cost">0</span></p>
+    </section>
+</main>
+
+<script src="js/mealplan.js"></script>
+</body>
+</html>
